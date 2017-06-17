@@ -24,7 +24,7 @@ import { IntroComponent } from './intro/intro.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
