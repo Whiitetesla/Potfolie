@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { smoothscroll } from 'smoothscroll-polyfill/dist/smoothscroll'; smoothscroll.polyfill();
+import smoothscroll from 'smoothscroll-polyfill/dist/smoothscroll'; smoothscroll.polyfill();
 
 @Component({
   selector: 'app-toolbar',
