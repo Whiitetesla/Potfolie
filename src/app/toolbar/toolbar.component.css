@@ -1,12 +1,22 @@
 
 .fixed-header {
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 7%;
+  text-align: center;
+  margin: auto;
+  width: 85%;
   position: fixed;
   top: 0; left: 0; right: 0;
 }
 
-.fixed-header > div {
+.fixed-header > div{
   display: inline-block;
   margin: 5px 1%;
+}
+
+.nav-link{
+  cursor: pointer;
+  font-size: 125%;
+}
+
+#icons{
+  height: 5%;
 }
