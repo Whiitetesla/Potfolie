@@ -10,6 +10,8 @@ import { ResumeComponent } from './resume/resume.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { IntroComponent } from './intro/intro.component';
+import { LinkedInIconComponent } from './linked-in-icon/linked-in-icon.component';
+import { GitHubIconComponent } from './git-hub-icon/git-hub-icon.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { IntroComponent } from './intro/intro.component';
     ResumeComponent,
     ProjectsComponent,
     AboutComponent,
-    IntroComponent
+    IntroComponent,
+    LinkedInIconComponent,
+    GitHubIconComponent
   ],
   imports: [
     BrowserModule,

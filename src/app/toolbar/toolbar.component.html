@@ -1,6 +1,20 @@
 
 <div class="fixed-header" ng-controller="headerCtrl" >
-  <div *ngFor="let tab of tabs">
-    <button (click)="scrollWin(tab)">{{ tab }}</button>
-  </div>
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #e3f2fd;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggle" aria-controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse container" id="navToggle">
+        <ul class="navbar-nav mr-auto">
+          <div *ngFor="let tab of tabs">
+            <li class="nav-item">
+              <a class="nav-link" (click)="scrollWin(tab)">{{ tab.replace(tab[0],tab[0].toLocaleUpperCase()) }}</a>
+            </li>
+          </div>
+        </ul >
+    </div>
+      <app-git-hub-icon class="nav-link, icons"></app-git-hub-icon>
+      <app-linked-in-icon class="nav-link, icons"></app-linked-in-icon>
+  </nav>
 </div>
+
