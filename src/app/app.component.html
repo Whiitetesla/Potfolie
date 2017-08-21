@@ -1,13 +1,15 @@
 
-
-<app-toolbar></app-toolbar>
-<div class="toolSpace" id="home"></div>
-<app-intro></app-intro>
-<div class="toolSpace" id="about"></div>
-<app-about></app-about>
-<div class="toolSpace" id="projects"></div>
-<app-projects></app-projects>
-<div class="toolSpace" id="resume"></div>
-<app-resume></app-resume>
-<div class="toolSpace" id="contacts"></div>
-<app-contacts></app-contacts>
+<div (scroll)="onScroll($event)">
+  <app-toolbar id="toolbar"></app-toolbar>
+  <div class="toolSpace" id="home"></div>
+  <app-intro></app-intro>
+  <div class="toolSpace" id="about"></div>
+  <app-about></app-about>
+  <div class="toolSpace" id="projects"></div>
+  <app-projects></app-projects>
+  <div class="toolSpace" id="resume"></div>
+  <app-resume></app-resume>
+  <div class="toolSpace" id="contacts"></div>
+  <app-contacts></app-contacts>
+  <app-footer></app-footer>
+</div>

@@ -1,13 +1,13 @@
 
 <div class="fixed-header" ng-controller="headerCtrl" >
   <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #e3f2fd;">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggle" aria-controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" id="togglerBut" type="button" data-toggle="collapse" data-target="#navToggle" aria-controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse container" id="navToggle">
         <ul class="navbar-nav mr-auto">
           <div *ngFor="let tab of tabs">
-            <li class="nav-item">
+            <li class="nav-item" id={{tab.replace(tab[0],tab[0].toLocaleUpperCase())}}>
               <a class="nav-link" (click)="scrollWin(tab)">{{ tab.replace(tab[0],tab[0].toLocaleUpperCase()) }}</a>
             </li>
           </div>

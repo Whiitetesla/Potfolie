@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { IntroComponent } from './intro/intro.component';
 import { LinkedInIconComponent } from './linked-in-icon/linked-in-icon.component';
 import { GitHubIconComponent } from './git-hub-icon/git-hub-icon.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { GitHubIconComponent } from './git-hub-icon/git-hub-icon.component';
     AboutComponent,
     IntroComponent,
     LinkedInIconComponent,
-    GitHubIconComponent
+    GitHubIconComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
