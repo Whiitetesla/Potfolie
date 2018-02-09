@@ -14,6 +14,7 @@ import { LinkedInIconComponent } from './linked-in-icon/linked-in-icon.component
 import { GitHubIconComponent } from './git-hub-icon/git-hub-icon.component';
 import { FooterComponent } from './footer/footer.component';
 import { EsportComponent } from './esport/esport.component';
+import { ServiceComponent } from './esport/service/service.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { EsportComponent } from './esport/esport.component';
     LinkedInIconComponent,
     GitHubIconComponent,
     FooterComponent,
-    EsportComponent
+    EsportComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
